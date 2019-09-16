@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: calc(60% + 0.5vw);
+  background: url("./images/background.png") no-repeat;
+  background-size: 100% calc(100vh + 0.5em);
+}
+
+.app-section {
+  width: 82%;
+  min-height: 90vh;
+  background: #fff;
+  margin: 3% auto 0;
+  display: grid;
+  grid-template-columns: 47% 47%;
+  column-gap: 6%;
+}
+
+.app-info-section {
+  background-color: #24a44d;
+  width: 100%;
+  border-radius: 0 8px 8px 0;
+  padding-top: 3%;
+  padding-bottom: 11%;
+}
+
+#app-name {
+  margin-left: 5%;
+}
+
+.app-name-trafi {
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #035019;
+}
+
+.app-name-compass {
+  font-size: 0.9em;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#app-short-intro {
+  margin-top: 24%;
+  margin-left: 12%;
+  width: 65%;
+  color: #fff;
+}
+
+.app-short-intro-catchy {
+  font-size: 1.5em;
+}
+
+.app-short-intro-catchy span {
+  display: block;
+}
+
+.app-short-intro-catchy span.green {
+  color: #014f16;
+  font-weight: bold;
+}
+
+.app-short-intro-paragraph {
+  width: 75%;
+  margin-top: 18%;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.app-short-intro-button {
+  margin-top: 12%;
+  width: 35%;
+  height: 6%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 2.2% 7%;
+}
+
+.app-short-intro-button p {
+  color: #5ebf7f;
+  font-size: 1.15vw;
+  font-weight: bold;
+}
+
+.conversion-form-section {
+  width: 65%;
+  padding-top: 10%;
+  margin-left: 10%;
+}
+
+.conversion-form-section h1 {
+  font-size: calc(1.2em + 1.2vw);
+  font-weight: bold;
+  color: #36af5a;
+  margin-bottom: 5%;
+}
+
+.conversion-form-section-form {
+  width: 100%;
+}
+
+.conversion-form-section-form label,
+.conversion-form-section-form select,
+.conversion-form-section-form input {
+  display: block;
+  width: 100%;
+}
+
+.conversion-form-section-form label {
+  margin-bottom: 2%;
+  font-size: calc(0.7em + 0.07vw);
+  font-weight: bold;
+  color: #bfbfbf;
+}
+
+.conversion-form-section-form select,
+.conversion-form-section-form input {
+  height: 5%;
+  border: 1px solid #bfbfbf;
+  border-radius: 4px;
+}
+
+.conversion-form-section-form input {
+  padding: 3.2% 0 3.2% 3.2%;
+  margin-bottom: 15%;
+}
+
+.conversion-form-section-form select {
+  padding: 2.8% 0 2.8% 2.8%;
+  margin-bottom: 6%;
+}
+
+.conversion-form-section-form select,
+.conversion-form-section-form option {
+  font-size: calc(0.9em + 0.07vw);
+  font-weight: bold;
+  color: #8c8c8c;
+}
+
+.conversion-form-section-form input::placeholder {
+  font-size: calc(0.5em + 0.2vw);
+  font-weight: bold;
+  color: #bfbfbf;
+}
+
+.conversion-form-section-button {
+  width: 100%;
+  background-color: #24a44d;
+  height: calc(20px + 2.5vh);
+  padding: auto auto;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.conversion-form-section-button p {
+  color: #fff;
+  font-size: calc(1em + 0.3vw);
+  font-weight: bold;
+  text-align: center;
+}
+
+.conversion-display-section {
+  width: 50%;
+  text-align: center;
+  margin: 40px auto 0 auto;
+}
+
+.conversion-display-section p:first-child {
+  font-size: calc(0.7em + 0.2vw);
+  color: #8c8c8c;
+}
+
+.conversion-display-section p:nth-child(2) {
+  font-size: calc(1.5em + 1.3vw);
+  color: #29a653;
+}
+
+.conversion-display-section-manipulators {
+  font-size: calc(0.5em + 0.2vw);
+  width: 100%;
+  text-align: center;
+  margin: 0.5em auto 0 auto;
+  display: inline-block;
+}
+
+.invert-conversion {
+  color: #36ab5e;
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+.reset-conversion {
+  color: #8c8c8c;
+  cursor: pointer;
+}
