@@ -1,4 +1,6 @@
 const HTMLWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
+
 
 module.exports = () => ({
   module: {
@@ -20,11 +22,11 @@ module.exports = () => ({
       },
       {
         test: /\.css$/,
-        use: [ "style-loader", "css-loader"]
+        use: ["style-loader", "css-loader"]
       },
       {
         test: /\.(jpg|png|svg|gif)$/,
-        use: [ "file-loader"]
+        use: ["file-loader"]
       }
     ]
   },
@@ -32,6 +34,7 @@ module.exports = () => ({
     new HTMLWebpackPlugin({
       template: "./src/index.html",
       filename: "./index.html"
-    })
+    }),
+    new webpack.DefinePlugin(envKeys)
   ]
 });
