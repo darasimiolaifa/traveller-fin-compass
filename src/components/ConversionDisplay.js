@@ -1,10 +1,11 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
+import React from "react";
 
-const ConversionDisplay = () => {
+const ConversionDisplay = ({ amount }) => {
   return (
     <section className="conversion-display-section">
       <p>Conversion value is</p>
-      <p>$00.00</p>
+      <p>{amount}</p>
     </section>
   );
 };
