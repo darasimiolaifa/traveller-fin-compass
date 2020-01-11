@@ -1,6 +1,6 @@
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 
-module.exports = {
+module.exports = () => ({
   module: {
     rules: [
       {
@@ -17,6 +17,14 @@ module.exports = {
             loader: "html-loader"
           }
         ]
+      },
+      {
+        test: /\.css$/,
+        use: [ "style-loader", "css-loader"]
+      },
+      {
+        test: /\.(jpg|png|svg|gif)$/,
+        use: [ "file-loader"]
       }
     ]
   },
@@ -26,4 +34,4 @@ module.exports = {
       filename: "./index.html"
     })
   ]
-};
+});
