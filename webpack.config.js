@@ -1,7 +1,6 @@
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
 
-
 module.exports = () => ({
   module: {
     rules: [
@@ -34,7 +33,6 @@ module.exports = () => ({
     new HTMLWebpackPlugin({
       template: "./src/index.html",
       filename: "./index.html"
-    }),
-    new webpack.DefinePlugin(envKeys)
+    })
   ]
 });
