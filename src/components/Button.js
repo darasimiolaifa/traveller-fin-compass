@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
-import React from "react";
+import React from 'react';
 
-const Button = ({ className, text, handleClick }) => {
+const Button = ({ className, text }) => {
   return (
-    <div className={className} onClick={handleClick}>
+    <div className={className}>
       <p>{text}</p>
     </div>
   );
