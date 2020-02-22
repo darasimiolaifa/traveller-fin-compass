@@ -10,7 +10,7 @@ It is built with React and plain CSS3, and consumes a public API.
 
 ### Hosted App
 
-The app is hosted on Netlify here: [TraFi-Compass](https://quizzical-bartik-52ff02.netlify.com)
+The app is hosted on Netlify here: [TraFi-Compass](https://darasimi-traficompass.netlify.com)
 
 ### Backend API.
 
